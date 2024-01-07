@@ -51,15 +51,15 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Big Data and Data Analytics Master Student> 
+- 🧑‍💻 I am a Big Data and Data Analytics Master Student
 
-- 🛩️ prev: <Business Analyst in IT>
+- 🛩️ prev: Business Analyst in IT
 
-- ❤️ <Sport, Books, History, Music, Art>
+- ❤️ Sport, Books, History, Music, Art
 
-- 🤖 <USA educational system project>
+- 🤖 USA educational system project
 
-- 🏂 <Swimming, Reading, Dancing>
+- 🏂 Swimming, Reading, Dancing
 
 - 📫 How to reach me: <anastasiya.dubinskaya@gmail.com>
 
