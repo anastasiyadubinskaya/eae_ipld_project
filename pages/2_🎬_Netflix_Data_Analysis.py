@@ -54,7 +54,7 @@ num_missing_directors = movies_df['director'].isna().sum()
 
 # TODO: Ex 2.4: How many different countries are there in the data?
 
-n_countries = movies_df['country'].explode().nunique()
+n_countries = countries.size
 
 # TODO: Ex 2.5: How many characters long are on average the title names?
 movies_df['title_length'] = movies_df['title'].apply(lambda x: len(x))
@@ -114,7 +114,7 @@ movies_avg_duration_per_year = (movies_df.loc[movies_df['type'] == 'Movie']).gro
 if movies_avg_duration_per_year is not None:
     fig = plt.figure(figsize=(9, 6))
 
-    # plt.plot(...# TODO: generate the line plot using plt.plot() and the information from movies_avg_duration_per_year (the vertical axes with the minutes value) and its index (the horizontal axes with the years)
+    movies_avg_duration_per_year.plot.line() # TODO: generate the line plot using plt.plot() and the information from movies_avg_duration_per_year (the vertical axes with the minutes value) and its index (the horizontal axes with the years)
 
     plt.title("Average Duration of Movies Across Years")
 
