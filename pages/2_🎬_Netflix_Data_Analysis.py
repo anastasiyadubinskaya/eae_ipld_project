@@ -54,6 +54,12 @@ num_missing_directors = movies_df['director'].isna().sum()
 
 # TODO: Ex 2.4: How many different countries are there in the data?
 
+movies_df['country'] = movies_df['country'].fillna('Unknown')
+
+countries_all = movies_df['country'].apply(lambda x: ', '.join(x) if isinstance(x, list) else x)
+
+countries = pd.Series(', '.join(countries_all).split(', ')).unique()
+
 n_countries = countries.size
 
 # TODO: Ex 2.5: How many characters long are on average the title names?
